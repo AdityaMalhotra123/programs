@@ -1,0 +1,14 @@
+0.  Pneumonoultramicroscopicsilicovolcanoconiosis is a lung disease caused by inhaling ash and sand dust.
+1.  It returns a pointer to a struct which contains the usage staistics of the program.
+2.  16 members
+3.  We pass before and after by reference because passing large structs by value is slow and takes up alot of memory. If you're passing or returning
+    structs by value, copies of those structs will get placed on the stack, potentially causing sack overflow.
+4.  The first line of the for loop compises a statement of the form 'c = fgetc(fp)'. 'fgetc' gets the next character from fp and avances
+    the position indicator in fp until EOF (end of file) is reached. Each character of a word goes through various conditions: if the character is an
+    alphabet or an apostrophe, which is not at index 0 of the word, the character is added to the end of the word array.
+    Else if the word consists of numericals, the word is ignored and skipped.
+    Else if a space or punctuation mark is encountered, implying that the whole word has been audited, '\0' is appended to the word array.
+5.  'fscanf' with a format string like '%s' will read characters one by one until a space is found. Since words within the text files can
+    end with punctuation, 'fcanf' will view them as a part of the word, thereby complicating the reading procedure.
+6. 'const' prevents changes to the string/data the parameter is pointing at. For e.g the parameters for check and load prevent changes to
+    the read word or the dictionary.

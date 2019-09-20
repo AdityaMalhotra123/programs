@@ -1,0 +1,17 @@
+1.  'stdint.h' is a header file in the C standard library which defines integer types, such as int32_t, with specific widths, and macros for integer constant expressions.
+2.  These are unsigned and signed integer types from stdint.h that reduce the chances of making errors as the machine won't be confused unlike
+    when it construes some integers as 16-bit and some as 32-bit
+3.  BYTE - 1 byte (8 bits)
+    DWORD - 4 bytes (32 bits)
+    LONG - 4 bytes (32 bits)
+    WORD - 2bytes (16 bits)
+4.  The first two bytes of any BMP file are the ASCII values 'B' and then 'M'
+5.  bfSize stores the size of the entire BMP file as indicated by 'BITMAPFILEHEADER' where as biSize stores the size of the structure
+    as indicated by 'BITMAPINFOHEADER'
+6.  If biHeight is negative, the image will appear upside down
+7.  biBitCount specifies the BMP's color depth - the number of bits per pixel
+8.  fopen will return NULL if the file it is trying to open doesn't exist.
+9.  fread's third arguement is always 1 as the code intends to iterate over every pixel.
+10. padding = 4 - (((3 * 3) % 4) % 4) = 3
+11. fseek helps us change the offset of a pointe
+12. SEEK_CUR is the current location indicator in the file

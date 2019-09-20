@@ -1,0 +1,4 @@
+0. It allows all dimensions between 3 x 3 and 9 x 9.
+1. The game's board is represented by a 2D array
+2. The void greet(void) function is called to greet the player at the game's start.
+3. I need to implement functions int, draw, move and won.
